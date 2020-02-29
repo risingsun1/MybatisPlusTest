@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtexplorer.mapper.ExamMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jtexplorer.entity.Exam">
+        <id column="exam_id" property="examId" />
+        <result column="exam_year" property="examYear" />
+        <result column="exam_name" property="examName" />
+        <result column="exam_remark" property="examRemark" />
+        <result column="exam_status" property="examStatus" />
+        <result column="exam_db_create_date" property="examDbCreateDate" />
+        <result column="exam_db_update_date" property="examDbUpdateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        exam_id, exam_year, exam_name, exam_remark, exam_status, exam_db_create_date, exam_db_update_date
+    </sql>
+
+</mapper>

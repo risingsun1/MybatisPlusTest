@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtexplorer.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jtexplorer.entity.Article">
+        <id column="arti_id" property="artiId" />
+        <result column="arti_number" property="artiNumber" />
+        <result column="arti_user_id" property="artiUserId" />
+        <result column="arti_user_name" property="artiUserName" />
+        <result column="arti_user_nick_name" property="artiUserNickName" />
+        <result column="arti_title" property="artiTitle" />
+        <result column="arti_cover" property="artiCover" />
+        <result column="arti_thumb" property="artiThumb" />
+        <result column="arti_type" property="artiType" />
+        <result column="arti_url" property="artiUrl" />
+        <result column="arti_remark" property="artiRemark" />
+        <result column="arti_status" property="artiStatus" />
+        <result column="arti_db_create_date" property="artiDbCreateDate" />
+        <result column="arti_db_update_date" property="artiDbUpdateDate" />
+        <result column="arti_intro" property="artiIntro" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        arti_id, arti_number, arti_user_id, arti_user_name, arti_user_nick_name, arti_title, arti_cover, arti_thumb, arti_type, arti_url, arti_remark, arti_status, arti_db_create_date, arti_db_update_date, arti_intro
+    </sql>
+
+</mapper>

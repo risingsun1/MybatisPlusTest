@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtexplorer.mapper.RoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jtexplorer.entity.Role">
+        <id column="role_id" property="roleId" />
+        <result column="role_name" property="roleName" />
+        <result column="role_code" property="roleCode" />
+        <result column="role_type" property="roleType" />
+        <result column="role_status" property="roleStatus" />
+        <result column="role_description" property="roleDescription" />
+        <result column="role_remark" property="roleRemark" />
+        <result column="role_db_create_date" property="roleDbCreateDate" />
+        <result column="role_db_update_date" property="roleDbUpdateDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        role_id, role_name, role_code, role_type, role_status, role_description, role_remark, role_db_create_date, role_db_update_date
+    </sql>
+
+</mapper>
